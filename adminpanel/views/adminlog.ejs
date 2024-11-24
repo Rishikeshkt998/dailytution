@@ -1,0 +1,32 @@
+<%-include('header')-%>
+    <div class="text-center center-div pt-5 mt-5" id="login">
+        <div class="container w-25 border py-5" style="background-color: #fff;">
+            <div class="title">
+                <h2 class="font-weight-bold"><span style="color: rgb(219, 219, 68);">Admin</span> <span style="color: rgb(26, 26, 140);">Login</span></h2>
+                <span>Login For the Admin</span>
+
+            </div>
+            <form action="/route/logi" method="post"class="pt-5">
+                <div class="form-group">
+                    <input type="name" class="form-control" placeholder="name" name="name" required>
+                    <small class="form-text text-muted text-left"></small>
+                </div><br>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" name="password" required>
+                </div><br>
+                <button type="submit" class="btn btn-success rounded-pill"style="background-color: rgb(45, 107, 241);border-color:rgb(45, 107, 241) ;">Submit</button>
+                
+               
+            </form>
+            
+            
+            
+                
+        
+            
+            
+        </div>
+
+    </div>
+<%-include('footer')-%>
+    

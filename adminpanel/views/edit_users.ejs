@@ -1,0 +1,31 @@
+<%-include('admin-header')-%>
+<div class="container w-25 border py-5 mt-2 pt-3" style="background-color: #fff;">
+
+    <h2><span style="color: rgb(219, 219, 68);">Edit</span> <span style="color: rgb(26, 26, 140);">User</span>  <p>( <%= data.name %> )</p></h2>
+    <form action="/route/update/<%= data._id %>" method="post"class="pt-5">
+        <div class="form-group">
+            <input type="name" class="form-control" placeholder="username" name="name" value="<%= data.name %>">
+        
+        </div><br>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="email" name="email" value="<%= data.email %>">
+        </div><br>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone number" name="phone" value="<%= data.phone %>">
+        </div><br>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="password" name="password" value="<%= data.password %>">
+        </div><br>
+        <button type="submit" class="btn btn-success rounded-pill" value="update user" style="background-color: rgb(45, 107, 241);border-color:rgb(45, 107, 241) ;">Submit</button>
+        
+       
+    </form>
+ 
+    
+    
+        
+
+    
+    
+</div>
+<%-include('admin-footer')-%>
